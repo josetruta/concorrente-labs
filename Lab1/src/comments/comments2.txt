@@ -1,0 +1,7 @@
+Q1) A diferença se dá pois as duas tarefas são executadas concorrentementes, em threads distintas - em comparação ao sequencial, cujo uma tarefa é executada após a outra. Na solução concorrente, a main executa, instancia as duas threads, e encerra sua execução. Na solução serial, a main executa e só vai encerrar sua execução após a completude das duas tarefas.
+
+Q2) Nomeei as threads de acordo com as tarefas que são de sua responsabilidade (Setup-Logs e Check-Recursos). Isso facilita no entendimento do output gerado pois conseguimos compreender com maior facilidade a qual execução se refere cada linha gerada. Embora na execução anterior isto também seja possível, com um nome mais declarativo e distinto, o entendimento é facilitado sobre o objetivo de cada uma das threads.
+
+Q3) A thread principal inicia sua execução, inicializa as tarefas concorrentes solicitadas por meio do instanciamento das duas threads específicas e, por fim, encerra sua execução (mesmo que as duas thread criadas não tenham sido concluídas).
+
+Q4) A alteração identificada é de que a thread principal (main) agora finaliza após a conclusão das threads que ela instanciou (Setup-Logs e CHeck-Recursos). Esta foi a principal alteração no fluxo. 
