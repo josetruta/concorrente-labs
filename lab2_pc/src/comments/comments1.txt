@@ -1,0 +1,1 @@
+Após algumas execuções, não notou-se alteração na ordem de execução das correções. Cada professor, de forma sequencial, corrigia as provas de cada aluno de suas turmas. Após a conclusão do último professor, as notas eram registradas no sistema e apareciam como output do programa.
