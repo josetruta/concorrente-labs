@@ -1,0 +1,33 @@
+Estes foram alguns dos resultados encontrados durante a execução da nossa implementação, em comparação com a implementação serial e as diferentes quantidades de threads.
+
+- Serial:
+
+real	0m12.321s
+user	0m12.253s
+sys	0m0.347s
+
+- Concurrent (2 threads):
+
+real	0m6.919s
+user	0m13.267s
+sys	0m0.361s
+
+- Concurrent (4 threads):
+
+real	0m3.802s
+user	0m13.587s
+sys	0m0.395s
+
+- Concurrent (8 threads):
+
+real	0m2.970s
+user	0m17.373s
+sys	0m0.484s
+
+- Concurrent (16 threads):
+
+real	0m2.670s
+user	0m23.199s
+sys	0m0.616s
+
+Há uma melhora no tempo de execução da solução concorrente em comparação ao sequencial. E, na solução concorrente, vê-se um ganho de desempenho com o aumento no número de threads, como é possível aferir pelos dados apresentados. Obviamente, há um limite técnico neste aumento de threads devido a competição por memória gerada.
