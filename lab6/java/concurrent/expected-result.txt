@@ -1,0 +1,3 @@
+Com o controle de concorrência, cada thread pode ser executada sem alterações inevidas em nossos dados, com acesso controlado a região crítica. Com isto, conseguimos visualizar que a soma dos registros resulta na quantidade total de requisições.
+
+

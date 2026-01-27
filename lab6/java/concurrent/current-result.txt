@@ -1,0 +1,41 @@
+Após repetidas execuções, conclui-se que o comportamento executado não condiz com o esperado. São realizads 5000 requisições, que podem derivar em diferentes registros - no entanto, a soma das estatísticas desse registros não totalizam 5000 requisições.
+
+EXECUÇÕES:
+
+aluno001@provaFull:~/fpc/2025.2/Lab6/src/java/concurrent$ bash run.sh 5000
+========= Estatisticas do Sistema =========
+Total de Acessos: 5000
+Total de Compras: 1642
+Total de Falhas: 1691
+Total de acessos sem compras ou falhas: 1662
+Usuarios Online: 10
+=======================================================
+
+real	0m0.985s
+user	0m0.324s
+sys	0m0.534s
+aluno001@provaFull:~/fpc/2025.2/Lab6/src/java/concurrent$ bash run.sh 5000
+========= Estatisticas do Sistema =========
+Total de Acessos: 5000
+Total de Compras: 1664
+Total de Falhas: 1616
+Total de acessos sem compras ou falhas: 1717
+Usuarios Online: 12
+=======================================================
+
+real	0m1.008s
+user	0m0.326s
+sys	0m0.540s
+aluno001@provaFull:~/fpc/2025.2/Lab6/src/java/concurrent$ bash run.sh 5000
+========= Estatisticas do Sistema =========
+Total de Acessos: 5000
+Total de Compras: 1689
+Total de Falhas: 1673
+Total de acessos sem compras ou falhas: 1637
+Usuarios Online: 8
+=======================================================
+
+real	0m1.011s
+user	0m0.310s
+sys	0m0.545s
+
